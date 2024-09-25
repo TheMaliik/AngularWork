@@ -9,7 +9,7 @@ export class UserComponent {
 
 
 
-  name:string ="Melek"
+name:string ="Melek"
 title!:string;
 
 
@@ -34,8 +34,7 @@ color ="blue"
 
 
 Change (){
-
-  this.name ="eeeeeeeeeeeeeee"
+  this.name = "eeeeeeeeeeeeeee"
 }
 
 
@@ -52,5 +51,8 @@ onChangeInput (event:Event) {
 
 
 ColorTwo =""
+
+
+
 
 }
