@@ -11,6 +11,8 @@ import { HomeComponent } from './Components/home/home.component';
 import { ListCategoriesComponent } from './Components/list-categories/list-categories.component';
 import { ContainsPipe } from './pipes/contains.pipe';
 import { HighlightDirective } from './directives/highlight.directive';
+import { NotFoundComponent } from './Components/not-found/not-found.component';
+import { ProductModule } from './features/product/product.module';
 
 
 @NgModule({
@@ -22,12 +24,14 @@ import { HighlightDirective } from './directives/highlight.directive';
     HomeComponent,
     ListCategoriesComponent,
     ContainsPipe,
-    HighlightDirective
+    HighlightDirective,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ProductModule
   ],
   providers: [],
   bootstrap: [AppComponent]
