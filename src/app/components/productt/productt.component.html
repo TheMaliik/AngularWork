@@ -1,0 +1,10 @@
+{{title}}
+<div style="margin-bottom: 20px;">
+   <img [src]="data.image" [alt]="data.title" class="img-fluid h-50 w-75" >
+    <h3>{{data.title | uppercase}}</h3>
+    <h3>{{data.description}}</h3>
+   
+        <button class="btn btn-danger" (click)="deleteChild()">Delete</button>
+   <!-- <button class="btn btn-primary" (click)="toUpdate(c)">Update</button> -->
+
+</div>
