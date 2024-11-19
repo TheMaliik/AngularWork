@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Category } from 'src/app/models/categorie';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-form-category',
@@ -23,11 +24,24 @@ export class FormCategoryComponent implements OnInit {
     }  
     );
   }
-
+/*
   add(f: any, title: any) {
     this.category.available = true;
     console.log(this.category);
     console.log(f);
     console.log(title)
   }
+*/
+
+  add(form: NgForm) {
+    if (form.valid) {
+      console.log('Form Submitted', this.category);
+      // Ajoutez ici votre logique pour envoyer ou traiter les données
+    } else {
+      console.log('Form invalid', form);
+    }
+  }
+
+
+
 }

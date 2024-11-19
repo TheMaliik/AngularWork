@@ -1,0 +1,10 @@
+<div *ngIf="control?.invalid && (control.touched || control.dirty)" class="alert alert-danger">
+    <div *ngIf="control.errors?.['required']">Ce champ est requis !</div>
+    <div *ngIf="control.errors?.['minlength']">
+      Minimum {{ control.errors?.['minlength'].requiredLength }} caractères requis !
+    </div>
+    <div *ngIf="control.errors?.['maxlength']">
+      Maximum {{ control.errors?.['maxlength'].requiredLength }} caractères autorisés !
+    </div>
+  </div>
+  
