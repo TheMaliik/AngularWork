@@ -36,7 +36,7 @@ export class FormCategoryComponent implements OnInit {
   add(form: NgForm) {
     if (form.valid) {
       console.log('Form Submitted', this.category);
-      // Ajoutez ici votre logique pour envoyer ou traiter les données
+      
     } else {
       console.log('Form invalid', form);
     }
